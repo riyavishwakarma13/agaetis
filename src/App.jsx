@@ -1,5 +1,5 @@
 function App() {
-  return <div className="bg-blue-900">SEVEN</div>;
+  return <div></div>;
 }
 
 export default App;
