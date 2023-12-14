@@ -1,56 +1,35 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 
 function App() {
   const [title, setTitle] = useState("");
   const [content, setContent] = useState("");
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
-    // Update UI with submitted content
-    setBlogData({ title, content });
-    // Clear form fields
-    setTitle("");
-    setContent("");
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    localStorage.setItem("blogTitle", title);
+    localStorage.setItem("blogContent", content);
+    window.location.href = "/blog"; // Redirect to PostPage
   };
-
-  const handleTitleChange = (event) => setTitle(event.target.value);
-  const handleContentChange = (event) => setContent(event.target.value);
-
-  // Stores submitted data for display
-  const [blogData, setBlogData] = useState({});
-
   return (
     <div>
       <h1>Submit your blog post!</h1>
       <form onSubmit={handleSubmit}>
+        <h2>Submit Your Blog Post</h2>
         <label htmlFor="title">Title:</label>
-
         <input
           type="text"
           id="title"
-          name="title"
           value={title}
-          onChange={handleTitleChange}
-          required
+          onChange={(e) => setTitle(e.target.value)}
         />
-        <br />
         <label htmlFor="content">Content:</label>
         <textarea
           id="content"
-          name="content"
           value={content}
-          onChange={handleContentChange}
-          required
+          onChange={(e) => setContent(e.target.value)}
         />
-        <br />
         <button type="submit">Submit</button>
       </form>
-      {blogData.title && (
-        <div className="submitted-post">
-          <h3>{blogData.title}</h3>
-          <p>{blogData.content}</p>
-        </div>
-      )}
     </div>
   );
 }
