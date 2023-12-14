@@ -24,7 +24,7 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <body className="max-w-7xl mx-auto">
+    <body className="max-w-6xl mx-auto">
       <Navbar />
       <RouterProvider router={router} />
     </body>
