@@ -1,6 +1,7 @@
 import React from "react";
 import NewFeature from "../../components/NewFeature";
 import AsideSection from "./../../components/Aside";
+import AnotherBlog from "../../components/AnotherBlog";
 
 const BlogDesc = () => {
   return (
@@ -59,6 +60,7 @@ const BlogDesc = () => {
       </div>
       <div className="flex flex-col lg:flex-row justify-between gap-5 mx-1 py-6 items-start">
         <section className="flex-1">
+          <AnotherBlog />
           <NewFeature />
         </section>
         {/* aside section */}

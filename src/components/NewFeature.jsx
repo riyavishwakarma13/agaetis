@@ -2,11 +2,13 @@ import React from "react";
 
 const NewFeature = () => {
   return (
-    <section className="space-y-3">
-      <h1 className="text-3xl font-serif font-bold">New Feature</h1>
-      <p className="text-gray-500 font-medium">
-        December 14, 2013 by <span className="text-blue-500">Chris</span>
-      </p>
+    <section className="space-y-3 py-5">
+      <div>
+        <h1 className="text-3xl font-serif font-bold">New Feature</h1>
+        <p className="text-gray-500 font-medium">
+          December 14, 2013 by <span className="text-blue-500">Chris</span>
+        </p>
+      </div>
       <div className="space-y-3 text-sm">
         <p>
           {" "}
