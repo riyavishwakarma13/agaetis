@@ -3,8 +3,7 @@ import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
 import "./index.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Blog from "./blogs/index.jsx";
-import BlogDesc from "./blogs/[id]/index.jsx";
+import Blog from "./blog/index.jsx";
 import Navbar from "./components/Navbar.jsx";
 
 const router = createBrowserRouter([
@@ -13,12 +12,8 @@ const router = createBrowserRouter([
     element: <App />,
   },
   {
-    path: "/blogs",
+    path: "/blog",
     element: <Blog />,
-  },
-  {
-    path: "/blogs/:id",
-    element: <BlogDesc />,
   },
 ]);
 

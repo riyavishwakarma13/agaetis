@@ -1,9 +1,9 @@
 import React from "react";
-import NewFeature from "../../components/NewFeature";
-import AsideSection from "./../../components/Aside";
-import AnotherBlog from "../../components/AnotherBlog";
+import NewFeature from "../components/NewFeature";
+import AsideSection from "../components/Aside";
+import AnotherBlog from "../components/AnotherBlog";
 
-const BlogDesc = () => {
+const Blog = () => {
   return (
     <main className="px-1 space-y-2 py-6">
       {/* title */}
@@ -70,4 +70,4 @@ const BlogDesc = () => {
   );
 };
 
-export default BlogDesc;
+export default Blog;
