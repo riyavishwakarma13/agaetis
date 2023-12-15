@@ -2,7 +2,7 @@ import React from "react";
 
 const AsideSection = () => {
   return (
-    <aside className="w-1/3 lg:block hidden">
+    <aside className="w-1/3 sticky top-5 lg:block hidden">
       <div className="bg-gray-100 mb-5 rounded p-4">
         <h1 className="font-serif font-bold text-xl italic">About</h1>
         <p>
