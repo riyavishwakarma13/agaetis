@@ -11,7 +11,7 @@ function App() {
     localStorage.setItem("blogTitle", title);
     localStorage.setItem("blogContent", content);
     localStorage.setItem("blogAuthor", author);
-    window.location.pathname = "/blog"; // Redirect to PostPage
+    window.location.href = "/blog"; // Redirect to PostPage
   };
   return (
     <div className="py-10 px-4 space-y-5">
