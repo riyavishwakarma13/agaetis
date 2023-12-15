@@ -31,6 +31,7 @@ function App() {
             value={title}
             placeholder="Enter Your Blog Title"
             className="input-title"
+            required
             onChange={(e) => setTitle(e.target.value)}
           />
         </div>
@@ -44,6 +45,7 @@ function App() {
             value={author}
             placeholder="Enter the Author Name"
             className="input-title"
+            required
             onChange={(e) => setAuthor(e.target.value)}
           />
         </div>
@@ -55,6 +57,7 @@ function App() {
             id="content"
             value={content}
             rows={10}
+            required
             placeholder="Enter Blog Content"
             className="px-6 border-2 border-gray-500 rounded-lg focus:resize-y py-3"
             onChange={(e) => setContent(e.target.value)}
