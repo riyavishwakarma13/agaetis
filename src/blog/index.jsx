@@ -10,7 +10,13 @@ const Blog = () => {
   const author = localStorage.getItem("blogAuthor");
 
   if (!title || !content) {
-    return <p>No blog post found!</p>;
+    return (
+      <div className="py-10">
+        <p className="font-serif font-bold text-center text-3xl">
+          No blog post found!
+        </p>
+      </div>
+    );
   }
   return (
     <main className="px-1 space-y-2 py-6">
