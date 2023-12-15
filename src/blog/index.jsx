@@ -19,7 +19,7 @@ const Blog = () => {
           <h1 className="text-2xl md:text-5xl font-serif italic font-bold">
             {title}
           </h1>
-          <p className="text-lg text-gray-400">{content}</p>
+          <p className="text-lg text-gray-400">{content.slice(50, 200)}...</p>
           <p className="font-bold text-lg">Continue reading...</p>
         </div>
         <div></div>
@@ -28,6 +28,35 @@ const Blog = () => {
       <DefaultArticles />
       <div className="flex flex-col lg:flex-row justify-between gap-5 mx-1 py-6 items-start">
         <section className="flex-1 px-3">
+          <div className="border-b py-4 border-gray-300">
+            <h2 className="text-2xl font-serif italic font-bold">
+              From the Firehose
+            </h2>
+          </div>
+          <div className="py-5">
+            <h3 className="text-3xl font-serif font-bold">Another blog post</h3>
+            <p className="text-gray-500 font-medium">
+              December 23, 2013 by <span className="text-blue-500">Jacob</span>
+            </p>
+          </div>
+          <div className="space-y-2">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              magni recusandae rem consequatur possimus impedit vero. Nisi esse
+              et fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aliquam et voluptatibus inventore illum minima necessitatibus
+              rerum sunt ex aut? Temporibus, voluptatibus eligendi. Tenetur
+              iste, blanditiis cumque dolore in praesentium adipisci?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto
+              magni recusandae rem consequatur possimus impedit vero. Nisi esse
+              et fugit. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aliquam et voluptatibus inventore illum minima necessitatibus
+              rerum sunt ex aut? Temporibus, voluptatibus eligendi. Tenetur
+              iste, blanditiis cumque dolore in praesentium adipisci?
+            </p>
+          </div>
           <AnotherBlog />
           <NewFeature />
         </section>
