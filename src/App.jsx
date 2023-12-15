@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Router } from "react-router-dom";
 
 function App() {
   const [title, setTitle] = useState("");
@@ -10,7 +11,7 @@ function App() {
     localStorage.setItem("blogTitle", title);
     localStorage.setItem("blogContent", content);
     localStorage.setItem("blogAuthor", author);
-    window.location.href = "/blog"; // Redirect to PostPage
+    window.location.pathname = "/blog"; // Redirect to PostPage
   };
   return (
     <div className="py-10 px-4 space-y-5">
